@@ -4,6 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In Page</title>
+    <link rel="icon" type="image/x-icon" href="imgs/logo/signin.png" />
+    <script
+      src="https://kit.fontawesome.com/cb104e752f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>Sign In</h2>
+      <p>
+        Or <a href="#">create account</a>
+      </p>
+    </header>
+    
+    <main>
+      <form action="#" method="POST">
+        <section>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter Your email.."
+          />
+        </section>
+
+        <section>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter Your password.."
+          />
+        </section>
+
+        <section>
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Remember me</label>
+        </section>
+
+        <section>
+          <button type="submit">Sign In</button>
+        </section>
+
+        <section>
+          <button type="button">
+            <i class="fa-brands fa-google"></i> Sign In with Google
+          </button>
+        </section>
+
+        <section>
+          <a href="#">Forgot your password?</a>
+        </section>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
