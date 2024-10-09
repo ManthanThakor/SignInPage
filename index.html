@@ -5,68 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In Page</title>
     <link rel="icon" type="image/x-icon" href="imgs/logo/signin.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
+
     <script
       src="https://kit.fontawesome.com/cb104e752f.js"
       crossorigin="anonymous"
     ></script>
   </head>
+  <style>
+    body {
+      font-family: "Sofia", sans-serif;
+    }
+  </style>
   <body>
-    <header>
-      <h2>Sign In</h2>
-      <p>Or <a href="#">create account</a></p>
-    </header>
+    <div class="main-container">
+      <header class="sign-in-head">
+        <h2>Sign In</h2>
+        <p>Or <a href="#">create account</a></p>
+      </header>
 
-    <main>
-      <form action="#" method="POST">
-        <section>
-          <label for="email">Email</label>
-        </section>
+      <main>
+        <form action="#" method="POST">
+          <section class="form-section">
+            <label for="email">Email</label>
+          </section>
 
-        <section>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Enter Your email.."
-          />
-        </section>
+          <section class="form-section">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input-email"
+              required
+              placeholder="Enter Your email.."
+            />
+          </section>
 
-        <section>
-          <label for="password">Password</label>
-        </section>
+          <section class="form-section">
+            <label for="password">Password</label>
+          </section>
 
-        <section>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            placeholder="Enter Your password.."
-          />
-        </section>
+          <section class="form-section">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="input-password"
+              required
+              placeholder="Enter Your password.."
+            />
+          </section>
 
-        <section>
-          <input type="checkbox" id="remember" name="remember" />
-          <label for="remember">Remember me</label>
-        </section>
+          <section class="form-section">
+            <input
+              type="checkbox"
+              id="remember"
+              class="checkbox-remember"
+              name="remember"
+            />
+            <label for="remember">Remember me</label>
+          </section>
 
-        <section>
-          <button type="submit">Sign In</button>
-        </section>
+          <section class="form-section">
+            <button type="submit" class="button-submit">Sign In</button>
+          </section>
 
-        <section>
-          <button type="button">
-            <i class="fa-brands fa-google"></i> Sign In with Google
-          </button>
-        </section>
+          <section class="form-section">
+            <button type="button" class="button-google">
+              <i class="fa-brands fa-google"></i> Sign In with Google
+            </button>
+          </section>
 
-        <section>
-          <a href="#">Forgot your password?</a>
-        </section>
-      </form>
-    </main>
-
-    <footer></footer>
+          <section class="form-section">
+            <a href="#" class="link-forgot-password">Forgot your password?</a>
+          </section>
+        </form>
+      </main>
+    </div>
   </body>
 </html>
